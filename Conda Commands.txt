@@ -1,0 +1,9 @@
+conda create -n my-env
+conda activate my-env
+conda install numpy
+conda list
+conda install --file filename
+
+. Scripts/activate (To activate venv created by pip)
+
+conda create --prefix /tmp/test-env python=2.7 (creating venv in specific folder)
