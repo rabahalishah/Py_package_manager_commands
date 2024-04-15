@@ -38,8 +38,13 @@ pip module_name --version  (to check the version)
 ```bash
 python -m venv venv_folder_name (to create virtual env)
 ```
+First go inside your virtual environment folder and then run the below script
 ```bash
-. path/active (to activate the venv)
+. ./Scripts/active (to activate the venv)
+```
+First go inside your virtual environment folder and then run the below script
+```bash
+deactivate (press enter, this command is used to deactivate the venv)
 ```
 ```bash
 pip install module_name
