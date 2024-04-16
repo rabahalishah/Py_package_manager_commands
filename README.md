@@ -2,24 +2,73 @@
 This repo contains the most frequently used Python package manager commands and some other commands related to python packages.
 
 # 01 Conda Commands:
-```bash
-conda create -n my-env
-```
-```bash
-conda activate my-env
-```
-```bash
-conda install numpy
-```
-```bash
-conda list
-```
-```bash
-conda install --file filename
-```
-```bash
-. Scripts/activate //(To activate venv created by pip)
-```
+Here are some of the most commonly used Conda commands:
+
+1. **Creating Environments**:
+   - ```bash
+     conda create --name myenv
+     ```: Creates a new environment named `myenv`.
+   - ```bash
+     conda create --name myenv python=3.8
+     ```: Creates a new environment named `myenv` with Python 3.8 installed.
+   - ```bash
+     conda env list
+     ```: Lists all the created environments.
+
+2. **Activating and Deactivating Environments**:
+   - ```bash
+     conda activate myenv
+     ```: Activates the environment named `myenv`.
+   - ```bash
+     conda deactivate
+     ```: Deactivates the current environment.
+
+3. **Managing Packages**:
+   - ```bash
+     conda install package_name
+     ```: Installs a package into the current environment.
+   - ```bash
+     conda install numpy pandas
+     ```: Installs multiple packages at once.
+   - ```bash
+     conda update package_name
+     ```: Updates a package to the latest version.
+   - ```bash
+     conda remove package_name
+     ```: Removes a package from the environment.
+
+4. **Listing Installed Packages**:
+   - ```bash
+     conda list
+     ```: Lists all packages installed in the current environment.
+
+5. **Searching for Packages**:
+   - ```bash
+     conda search search_term
+     ```: Searches for packages containing the specified term.
+
+6. **Environment Management**:
+   - ```bash
+     conda env export > environment.yaml
+     ```: Exports the environment to a YAML file.
+   - ```bash
+     conda env create -f environment.yaml
+     ```: Creates an environment from a YAML file.
+   - ```bash
+     conda env remove --name myenv
+     ```: Removes an environment named `myenv`.
+
+7. **Miscellaneous**:
+   - ```bash
+     conda info
+     ```: Displays information about the current conda installation.
+   - ```bash
+     conda clean --all
+     ```: Cleans unused packages and caches.
+
+These are some of the fundamental Conda commands that are widely used for managing environments and packages.
+
+
 ```bash
 conda create --prefix /tmp/test-env python=2.7 // (creating venv in specific folder)
 ```
